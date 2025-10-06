@@ -20,8 +20,8 @@ If you are using an unsupported version, please upgrade to a supported release t
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+The Hardhat team takes security seriously. To report a vulnerability,
+please use the private "Report a Vulnerability" feature on GitHub:
+https://github.com/NomicFoundation/hardhat/security/advisories/new
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+We will try to respond within 48 hours.
