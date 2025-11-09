@@ -19,6 +19,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!
+          echo Setup complete
 
 workflows:
   my-custom-workflow:
