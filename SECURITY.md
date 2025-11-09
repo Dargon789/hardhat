@@ -14,8 +14,6 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+We take security vulnerabilities seriously. Please report any security vulnerability by using GitHub's private vulnerability reporting feature, which can be found in the 'Security' tab of our repository.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+You can expect a response from us within 48 hours. If the issue is confirmed, we will work on a fix and coordinate with you on the public disclosure.
