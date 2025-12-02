@@ -1,47 +1,41 @@
-name: E2E tests
+name: E2E Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
-
-permissions:
-  contents: read
+    branches: [ main ]
 
 jobs:
-  run-e2e:
+  e2e:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # Disabled windows because it's too slow
-        # See: https://github.com/NomicFoundation/hardhat/issues/5247
-        os: [ubuntu-latest, macos-latest]
-    name: Run E2E tests on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    env:
-      # TODO: the e2e tests fail on windows when pnpm is used,
-      # for what we think is a bug in pnpm. We set this env
-      # variable to skip that combination until we find a solution.
-      #
-      # The failure is caused by `pnpm hardhat init` executing
-      # `hardhat init` twice on windows, which results in the
-      # second execution failing because `hardhat init` cannot
-      # be run on an existing project.
-      IS_WINDOWS: ${{ matrix.os == 'windows-latest' }}
+        os: [ubuntu-latest, windows-latest]
+        node: [18, 20, 22]
+
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-env
-      - name: Run fixture-projects script
-        run: |
-          cd e2e
-          chmod +x run-fixture-projects.sh
-          ./run-fixture-projects.sh
-        shell: bash
-      - name: Run test-project-initialization script
-        run: |
-          cd e2e
-          chmod +x test-project-initialization.sh
-          ./test-project-initialization.sh
-        shell: bash
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint & Security Scan
+        run: npm run lint && npm audit --production
+
+      - name: Run Hardhat E2E Tests
+        run: npm run test:e2e
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-logs
+          path: |
+            reports/
+            artifacts/
