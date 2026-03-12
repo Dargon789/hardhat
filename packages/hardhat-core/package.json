@@ -117,7 +117,7 @@
     "find-up": "^5.0.0",
     "fp-ts": "1.19.3",
     "fs-extra": "^7.0.1",
-    "immutable": "^4.0.0-rc.12",
+    "immutable": "^4.3.8",
     "io-ts": "1.10.4",
     "json-stream-stringify": "^3.1.4",
     "keccak": "^3.0.2",
