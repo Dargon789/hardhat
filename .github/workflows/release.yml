@@ -28,7 +28,8 @@ jobs:
           cache: "pnpm"
 
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --prefer-offline
+        run: pnpm install --no-frozen-lockfile --prefer-offline 
+        continue-on-error: false
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
