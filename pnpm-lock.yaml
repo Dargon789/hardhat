@@ -49,7 +49,7 @@ importers:
         version: 1.2.0
     devDependencies:
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -80,7 +80,7 @@ importers:
         version: 1.2.0
     devDependencies:
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -147,7 +147,7 @@ importers:
         specifier: ^9.0.2
         version: 9.1.2
       bn.js:
-        specifier: ^5.2.3
+        specifier: ^5.2.1
         version: 5.2.3
       chai:
         specifier: ^4.2.0
@@ -309,8 +309,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1
       undici:
-        specifier: ^6.23.0
-        version: 6.23.0
+        specifier: ^6.24.0
+        version: 6.24.0
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -1888,8 +1888,8 @@ importers:
         specifier: ^6.8.0
         version: 6.8.2
       undici:
-        specifier: ^6.23.0
-        version: 6.23.0
+        specifier: ^6.24.0
+        version: 6.24.0
     devDependencies:
       '@nomicfoundation/eslint-plugin-hardhat-internal-rules':
         specifier: workspace:^
@@ -2091,7 +2091,7 @@ importers:
         specifier: 1.10.4
         version: 1.10.4
       lodash:
-        specifier: ^4.17.23
+        specifier: ^4.17.21
         version: 4.17.23
       semver:
         specifier: ^6.3.0
@@ -2140,7 +2140,7 @@ importers:
         specifier: ^7.1.1
         version: 7.1.2(chai@4.5.0)
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -2200,7 +2200,7 @@ importers:
         specifier: ^4.2.0
         version: 4.5.0
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -2266,7 +2266,7 @@ importers:
         specifier: ^4.2.0
         version: 4.5.0
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -2335,7 +2335,7 @@ importers:
         specifier: ^7.1.1
         version: 7.1.2(chai@4.5.0)
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.7.0
         version: 9.26.0
       eslint-config-prettier:
         specifier: 8.3.0
@@ -8431,8 +8431,8 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  undici@6.23.0:
-    resolution: {integrity: sha512-VfQPToRA5FZs/qJxLIinmU59u0r7LXqoJkCzinq3ckNJp3vKEh7jTWN589YQ5+aoAC/TGRLyJLCPKcLQbM8r9g==}
+  undici@6.24.0:
+    resolution: {integrity: sha512-lVLNosgqo5EkGqh5XUDhGfsMSoO8K0BAN0TyJLvwNRSl4xWGZlCVYsAIpa/OpA3TvmnM01GWcoKmc3ZWo5wKKA==}
     engines: {node: '>=18.17'}
 
   unist-util-stringify-position@3.0.3:
@@ -11686,7 +11686,7 @@ snapshots:
       parse5: 7.2.0
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 6.23.0
+      undici: 6.24.0
       whatwg-mimetype: 4.0.0
 
   chokidar@3.5.3:
@@ -16522,7 +16522,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  undici@6.23.0: {}
+  undici@6.24.0: {}
 
   unist-util-stringify-position@3.0.3:
     dependencies:
