@@ -124,7 +124,7 @@ export class TruffleEnvironmentArtifacts {
           const libraryIdentifier = linkPlaceholder
             .slice(2)
             .replace(/_+$/, "")
-            .replace(/\\/g, "\\\\")
+            .replace(/[\\^$*+?.()|[\\\]{}]/g, "\\$&")
             .replace(/\$/g, "\\$");
 
           libraryAddresses[libraryIdentifier] = library.address;
