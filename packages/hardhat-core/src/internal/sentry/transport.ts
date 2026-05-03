@@ -1,4 +1,4 @@
-import type { Event, Response } from "@sentry/node";
+import type { Event } from "@sentry/node";
 import { spawn } from "child_process";
 import * as path from "path";
 
@@ -8,7 +8,7 @@ export function getSubprocessTransport(): any {
   const { Status, Transports } = require("@sentry/node");
 
   class SubprocessTransport extends Transports.BaseTransport {
-    public async sendEvent(event: Event): Promise<Response> {
+    public async sendEvent(event: Event): Promise<{ status: any }> {
       const extra: { verbose?: boolean; configPath?: string } =
         event.extra ?? {};
       const { verbose = false, configPath } = extra;
