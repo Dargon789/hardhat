@@ -38,7 +38,7 @@
     "chai": "^4.2.0",
     "ethereumjs-util": "^7.1.4",
     "fs-extra": "^7.0.1",
-    "truffle-contract": "^3.0.7"
+    "truffle-contract": "^4.0.31"
   },
   "devDependencies": {
     "@nomicfoundation/eslint-plugin-hardhat-internal-rules": "workspace:^",
