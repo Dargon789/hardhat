@@ -10,6 +10,7 @@ import {
 } from "@nomicfoundation/ignition-core/ui-helpers";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createHashRouter } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { VisualizationOverview } from "./pages/visualization-overview/visualization-overview";
 
 import "./main.css";
@@ -74,6 +75,7 @@ const main = async () => {
     ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <React.StrictMode>
         <RouterProvider router={router} />
+        <Analytics />
       </React.StrictMode>
     );
   } catch (error) {
