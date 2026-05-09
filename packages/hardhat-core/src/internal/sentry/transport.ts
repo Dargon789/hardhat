@@ -8,7 +8,7 @@ export function getSubprocessTransport(): any {
   const { Status, Transports } = require("@sentry/node");
 
   class SubprocessTransport extends Transports.BaseTransport {
-    public async sendEvent(event: Event): Promise<{ status: any }> {
+    public async sendEvent(event: Event): Promise<Response> {
       const extra: { verbose?: boolean; configPath?: string } =
         event.extra ?? {};
       const { verbose = false, configPath } = extra;
