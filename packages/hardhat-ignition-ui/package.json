@@ -24,6 +24,7 @@
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "5.1.26",
     "@typescript-eslint/parser": "^5.57.1",
+    "@vercel/analytics": "^1.4.1",
     "@vitejs/plugin-react": "^4.0.0",
     "chai": "^4.3.4",
     "chai-as-promised": "7.1.1",
@@ -40,7 +41,7 @@
     "svg-pan-zoom": "^3.6.1",
     "ts-node": "10.9.1",
     "typescript": "^5.0.2",
-    "vite": "^5.4.21",
+    "vite": "^6.4.2",
     "vite-plugin-singlefile": "^2.0.1"
   }
 }
